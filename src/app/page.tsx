@@ -1,15 +1,14 @@
 "use client";
+import './globals.css';
 
 import CommunityBadges from '@/components/CommunityBadges';
 import LastActivities from '@/components/LastActivities';
-import BadgeCarousel from '../components/BadgeCarousel';
 import { ApolloProvider } from '@apollo/client';
 import client from '../apollo';
 import Header from '@/components/Header';
-
-import './globals.css';
 import { Theme } from '@radix-ui/themes';
-import Footer from '@/components/footer';
+import Footer from '@/components/Footer';
+import Badges from '@/components/Badges';
 
 export default function Page() {
   return (
@@ -19,7 +18,7 @@ export default function Page() {
           <Header />
           <div>
             <LastActivities />
-            <BadgeCarousel />
+            <Badges />
             <CommunityBadges />
           </div>
         </div>

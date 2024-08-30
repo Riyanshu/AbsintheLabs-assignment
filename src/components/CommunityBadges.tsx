@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Text } from '@radix-ui/themes';
 import { badges } from '@/utils';
+import Badge from './Badges/Badge';
 
 const CommunityBadges = () => {
   return (
@@ -11,28 +12,7 @@ const CommunityBadges = () => {
       <Box className="overflow-x-auto custom-scrollbar mt-4 bg-elevation1 rounded-b-xl py-2 px-4 pb-6">
         <Box className="flex space-x-4">
           {badges.map((badge) => (
-            <Box
-              key={badge.id}
-              className={`rounded-xl w-48 flex-shrink-0 flex flex-col items-center ${badge.completed && 'border border-green'}`}
-            >
-              <Box className='bg-elevation2 w-full text-center rounded-t-xl p-2 justify-center'>
-                <Text className="text-text1 text-xs font-medium">{badge.name}</Text>
-                {!!badge.actions && (<Text className="text-text2 text-xs ml-1">{badge.actions} {badge.actions > 1 ? 'Actions' : 'Action' }</Text>)}
-              </Box>
-              <Box className="bg-elevation3 w-full h-full content-center">
-                <img
-                  src={badge.src}
-                  alt={badge.name}
-                  className="h-20 w-20 border-green border-4 object-contain ml-auto mr-auto my-6 rounded-full"
-                />
-              </Box>
-              <Box className='bg-green1 text-center w-full rounded-b-xl p-1'>
-                <Text className="text-green text-sm font-semibold">
-                  {badge.multiplier}
-                </Text>
-              </Box>
-              
-            </Box>
+            <Badge badge={badge} completed={badge.completed} />
           ))}
         </Box>
       </Box>

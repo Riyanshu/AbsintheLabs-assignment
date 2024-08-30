@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box } from '@radix-ui/themes';
-import Carousal from './Badges/Carousal';
-import HowToEarn from './Badges/HowToEarn';
+import Carousal from './Carousal';
+import HowToEarn from './HowToEarn';
 
-const BadgeCarousel = () => {
+const Badges = () => {
   return (
     <Box>
       <h2 className="text-lg font-bold text-gray-200 mt-4">Badges</h2>
@@ -15,4 +15,4 @@ const BadgeCarousel = () => {
   );
 };
 
-export default BadgeCarousel;
+export default Badges;

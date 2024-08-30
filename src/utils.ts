@@ -1,4 +1,14 @@
-export const badges = [
+export interface IBadge {
+    id: number;
+    src: string;
+    alt: string;
+    name: string;
+    multiplier: string;
+    actions: number;
+    completed: boolean;
+}
+
+export const badges: IBadge[] = [
     { id: 1, src: '/images/badge1.png', alt: 'Badge 1', name: 'Discord OG', multiplier: '1.15x', actions: 0, completed: true },
     { id: 2, src: '/images/badge2.png', alt: 'Badge 2', name: 'Liquidity Machine', multiplier: '1.15x', actions: 3, completed: true },
     { id: 3, src: '/images/badge3.png', alt: 'Badge 3', name: 'Income Engineer', multiplier: '2x', actions: 3, completed: true },
