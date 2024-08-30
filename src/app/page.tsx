@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <ApolloProvider client={client}>
       <Theme className='min-h-screen bg-elevation text-text1'>
-        <div className="px-40">
+        <div className="px-6 lg:px-40">
           <Header />
           <div>
             <LastActivities />
