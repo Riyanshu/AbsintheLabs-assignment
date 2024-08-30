@@ -27,8 +27,4 @@ export const actions = [
     { id: 1, action: 'Provide at least $50 Liquidity to USDT/ETH', completed: true },
     { id: 2, action: 'Provide at least $50 Liquidity to LINK/ETH' },
     { id: 3, action: 'Provide at least $100 Liquidity to WBTC/ETH' },
-    { id: 3, action: 'Provide at least $150 Liquidity to WBTC/ETH' },
-    { id: 3, action: 'Provide at least $200 Liquidity to WBTC/ETH' },
-    { id: 3, action: 'Provide at least $250 Liquidity to WBTC/ETH' },
-    { id: 3, action: 'Provide at least $300 Liquidity to WBTC/ETH' },
 ];
