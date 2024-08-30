@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import '@radix-ui/themes/styles.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -29,5 +31,41 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+body {
+  @apply bg-elevation;
+  font-family: 'Inter', sans-serif;
+}
+
+table {
+  @apply w-full text-left;
+}
+
+th, td {
+  @apply p-2 border-b;
+}
+
+th {
+  @apply font-semibold;
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: '#0c0e10';
+    border-radius: 16px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: '#080a0b';
+    border-radius: 8px;
+  }
+  &::-webkit-scrollbar-corner {
+    display: none;
+    opacity: 0;
   }
 }
